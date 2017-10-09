@@ -1,13 +1,23 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { Router, Route } from 'react-router';
-import App from './containers/App';
+import { Router, Route, IndexRoute } from 'react-router';
+import Navbar from './components/Navbar';
+import Home from './components/Home';
+import Cv from './components/Cv';
+import Research from './components/Research';
+import Teaching from './components/Teaching';
+import Writing from './components/Writing';
+
 
 const Root = props => {
   return(
     <Provider store={props.store}>
       <Router history={props.history}>
-        <Route path="/" component={App} />
+        <Route path='/' component={Home} />
+        <Route path="/cv" component={Cv} />
+        <Route path="/research" component={Research} />
+        <Route path="/teaching" component={Teaching} />
+        <Route path = "/writing" component={Writing} />
       </Router>
     </Provider>
   )
