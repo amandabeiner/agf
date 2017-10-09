@@ -1,0 +1,47 @@
+.home-container {
+
+  .header-container {
+    height: 100vh;
+  }
+
+  .home-header {
+    background-color: black;
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    position: relative;
+  }
+
+  .anne-name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3rem;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  .anne-photo {
+    border-radius: 50%;
+    max-height: 50%
+  }
+
+  .anne-bio {
+    text-align: justify;
+  }
+
+  .bio-container {
+    height: 100vh;
+    position: relative;
+
+    .bio-content {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%)
+    }
+
+    .columns {
+      padding: 0 2rem;
+    }
+  }
+}

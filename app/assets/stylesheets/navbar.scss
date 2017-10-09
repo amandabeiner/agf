@@ -1,0 +1,25 @@
+.navbar-container {
+  .link-container {
+    text-align: right;
+    margin: 2rem 2rem 2rem 0;
+    z-index: 1;
+  }
+
+  .nav-link {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: black;
+    display: inline-block;
+    margin-right: 0.85rem;
+    position: sticky;
+  }
+
+  .sticky-nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    // top: 2rem;
+    z-index: 1;
+    background: white;
+  }
+}
