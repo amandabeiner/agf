@@ -3,7 +3,7 @@ import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Bio = props => {
   return (
-    <div className="bio-container row">
+    <div className="bio-container row clearfix">
       <ScrollableAnchor id={"bio"} >
         <div className="bio-content">
           <div className="photo-container small-12 medium-6 columns">

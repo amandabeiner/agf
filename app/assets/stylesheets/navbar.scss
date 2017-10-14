@@ -1,8 +1,16 @@
+@import 'breakpoint';
 .navbar-container {
   .link-container {
     text-align: right;
-    margin: 2rem 2rem 2rem 0;
+    padding: 2rem 2rem 2rem 0;
     z-index: 1;
+    background: white;
+    width: 100%;
+
+    @include breakpoint(small) {
+      text-align: center;
+      padding-right: 0;
+    }
   }
 
   .nav-link {
@@ -12,13 +20,13 @@
     display: inline-block;
     margin-right: 0.85rem;
     position: sticky;
+    z-index: 1;
   }
 
   .sticky-nav {
     position: fixed;
     top: 0;
     right: 0;
-    // top: 2rem;
     z-index: 1;
     background: white;
   }
