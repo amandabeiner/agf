@@ -5,7 +5,9 @@ import Bio from './Bio'
 const Home = props => {
   return (
     <div className="home-container">
-      <Header />
+      <Header
+        headerName="Anne Gray Fischer"
+      />
       <Bio />
     </div>
   )
