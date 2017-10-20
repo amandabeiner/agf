@@ -1,0 +1,29 @@
+@import 'breakpoint';
+
+.header-container {
+  height: 100vh;
+
+  .home-header {
+    background-color: black;
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    position: relative;
+  }
+
+  .anne-name {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-right: 3rem;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.25rem;
+
+    @include breakpoint(small) {
+      width: 100%;
+      text-align: center;
+      margin-right: 0;
+    }
+  }
+}

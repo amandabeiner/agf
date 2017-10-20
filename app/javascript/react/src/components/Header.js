@@ -3,9 +3,9 @@ import Navbar from './Navbar'
 
 const Header = props => {
   return (
-    <div>
+    <div className="header-container">
       <div className="home-header">
-        <h1 className="anne-name">Anne Gray Fischer</h1>
+        <h1 className="anne-name">{props.headerName}</h1>
       </div>
       <Navbar />
     </div>
