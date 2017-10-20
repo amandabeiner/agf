@@ -1,4 +1,5 @@
 import React from 'react'
+import Header from './Header'
 
 // import { Document, Page } from 'react-pdf/build/entry.webpack'
 // import './resume.pdf'
@@ -10,7 +11,11 @@ import React from 'react'
 const Cv = props => {
   return (
     <div>
-      Cv
+      <Header
+        headerName="CV"
+      />
+      <img src="https://img.cuteness.com/cute-article-grid/cuteness/s3fs-public/1473972395540mceclip2.png" style={{display: 'block', margin: '5rem auto'}} />
+      <h1 style={{'text-align': 'center'}}>Can't find anything here yet</h1 >
     </div>
   )
 }
