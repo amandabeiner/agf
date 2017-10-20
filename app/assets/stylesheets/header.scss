@@ -18,6 +18,7 @@
     margin-right: 3rem;
     color: white;
     text-transform: uppercase;
+    letter-spacing: 0.25rem;
 
     @include breakpoint(small) {
       width: 100%;

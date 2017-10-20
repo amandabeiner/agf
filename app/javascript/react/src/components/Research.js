@@ -4,7 +4,7 @@ import ProjectContainer from './ProjectContainer'
 
 const Research = props => {
   return (
-    <div>
+    <div className="research-container">
       <Header
         headerName="Research"
       />
