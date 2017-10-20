@@ -1,0 +1,19 @@
+.writing-container {
+  .writing-project {
+    max-height: 500px;
+  }
+
+  .writing-image {
+    max-height: 40%;
+  }
+
+  .source-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold
+  }
+
+  .source-link:hover {
+    color: gray;
+  }
+}
