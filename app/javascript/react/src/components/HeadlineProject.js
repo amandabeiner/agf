@@ -4,7 +4,7 @@ const HeadlineProject = props => {
   return(
     <div className="headline-project">
       <h3 className="research-header">Dissertation</h3>
-      <img src="http://cdn1-www.dogtime.com/assets/uploads/gallery/30-impossibly-cute-puppies/impossibly-cute-puppy-2.jpg" className="float-left"/>
+      <img src="http://res.cloudinary.com/dpuzgzqir/image/upload/v1508803342/Waitress_with_Silk_Stockings_1933_Dorothea_Lange_qt0bjh.png" className="float-left"/>
       <p className="research-paragraph">
         My project, “Arrestable Behavior: Women, Police Power, and the Making of Law-and-Order America,” delivers the twentieth-century history of an often overlooked fixture of the contemporary criminal system: today, proportionally more black women are arrested for morals violations than any other group. At the beginning of this history, in the 1930s, more than one-third of all women arrested in the United States were charged with morals misdemeanors, including disorderly conduct, vagrancy, and prostitution. White women accounted for as much as seventy percent of these arrests. By the 1980s, however, these statistics had become inverted. Morals offenses accounted for just ten percent of all women’s arrests, but black women were the majority of women charged. In this work, I ask: why, as women overall became a shrinking target of sexual policing in a period of sexual liberalization, were black women increasingly subject to a mounting program of racially charged morals law enforcement?
       </p>

@@ -2,14 +2,15 @@
 
 .home-container {
   .header-container {
-    height: 100vh;
+   height: 100vh;
   }
 
   .home-header {
-    background-color: black;
+    background-image: url('http://res.cloudinary.com/dpuzgzqir/image/upload/v1508801436/higher_res_police_and_woman_outside_glass_slipper_wbesje.jpg');
     width: 100vw;
     height: 85vh;
     background-size: cover;
+    background-position: 30% 30%;
     position: relative;
   }
 

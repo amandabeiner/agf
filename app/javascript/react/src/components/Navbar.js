@@ -24,7 +24,6 @@ class Navbar extends Component {
   }
 
   componentWillUnmount() {
-    debugger
     window.removeEventListener('scroll', this.makeNavSticky())
   }
 
