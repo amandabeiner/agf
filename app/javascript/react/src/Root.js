@@ -12,7 +12,7 @@ import Writing from './components/Writing';
 const Root = props => {
   return(
     <Provider store={props.store}>
-      <Router history={props.history}>
+      <Router onUpdate={() => {window.scrollTo(0,0)}} history={props.history}>
         <Route path='/' component={Home} />
         <Route path="/cv" component={Cv} />
         <Route path="/research" component={Research} />
