@@ -41,17 +41,25 @@ class Navbar extends Component {
       navDiv.classList.remove('sticky-nav')
     }
   }
-
+  
   render() {
+    let target
+    const navLinks = this.props.links.map((link) => {
+      if(this.props.path === link.href) {
+        return(
+          <a key={link.href} className="nav-link" href={`${link.id}`}>{link.text}</a>
+        )
+      } else {
+        return(
+          <Link key={link.href} className="nav-link" to={`${link.href}`}>{link.text}</Link>
+        )
+      }
+    })
 
     return (
       <div className="navbar-container">
         <div className="link-container">
-          <a className="nav-link" href='#bio'>About</a>
-          <Link className="nav-link" to='/cv'>CV</Link>
-          <Link className="nav-link" to='/research'>Research</Link>
-          <Link className="nav-link" to='/teaching'>Teaching</Link>
-          <Link className="nav-link" to='/writing'>Writing</Link>
+          {navLinks}
         </div>
         {this.props.children}
       </div>

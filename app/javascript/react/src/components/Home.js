@@ -7,6 +7,7 @@ const Home = props => {
     <div className="home-container">
       <Header
         headerName="Anne Gray Fischer"
+        path={props.location.pathname}
       />
       <Bio />
     </div>

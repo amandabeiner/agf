@@ -1,0 +1,17 @@
+.cv-container {
+  .home-header {
+    background-image: url('http://res.cloudinary.com/dpuzgzqir/image/upload/v1510802302/141022-nylon-anniversary-17_phn8zw.jpg');
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    background-position: 30% 30%;
+    position: relative;
+  }
+
+  .resume {
+    display: block;
+    margin: auto;
+    min-width: 75%;
+    min-height: 100vh;
+  }
+}

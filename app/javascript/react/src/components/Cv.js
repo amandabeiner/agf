@@ -1,21 +1,18 @@
 import React from 'react'
 import Header from './Header'
+import ScrollableAnchor from 'react-scrollable-anchor'
 
-// import { Document, Page } from 'react-pdf/build/entry.webpack'
-// import './resume.pdf'
-// import { Document } from 'react-pdf/build/entry.webpack'
-// import Resume from '../constants/resume.pdf'
-// <Document
-//   file={{url: "http://res.cloudinary.com/dpuzgzqir/raw/upload/v1508198427/resume_exbqkm.pdf"}}
-// />
-const Cv = props => {
+const Cv = (props) => {
+  const url = "http://res.cloudinary.com/dpuzgzqir/image/upload/v1510794459/Anne_Gray_Fischer_CV_website_k3auie.pdf"
   return (
-    <div>
+    <div className="cv-container">
       <Header
         headerName="CV"
+        path={props.location.pathname}
       />
-      <img src="https://img.cuteness.com/cute-article-grid/cuteness/s3fs-public/1473972395540mceclip2.png" style={{display: 'block', margin: '5rem auto'}} />
-      <h1 style={{'text-align': 'center'}}>Can't find anything here yet</h1 >
+      <ScrollableAnchor id="resume">
+        <iframe className="resume" src={url}></iframe>
+      </ScrollableAnchor>
     </div>
   )
 }

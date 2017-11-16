@@ -7,6 +7,7 @@ const Research = props => {
     <div className="research-container">
       <Header
         headerName="Research"
+        path={props.location.pathname}
       />
       <ProjectContainer />
     </div>
