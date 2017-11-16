@@ -1,10 +1,22 @@
 .writing-container {
+  
+  .home-header {
+    background-image: url('http://res.cloudinary.com/dpuzgzqir/image/upload/v1510793805/movies_arrestingpower_yjc22h.jpg');
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+    background-position: 30% 30%;
+    position: relative;
+  }
+  
   .writing-project {
     max-height: 500px;
   }
 
   .writing-image {
-    max-height: 40%;
+    height: 15rem;
+    //max-height: 30%;
+    //30min-height: 250px;
   }
 
   .source-link {
