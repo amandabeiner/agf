@@ -13,12 +13,15 @@ class Writing extends Component {
         />
         <div className="articles-container row">
           <ScrollableAnchor id="writing">
+            <div className="writing-intro">
+              My historical work is inspired by and responsive to the urgency of our contemporary political moment. I am committed to public writing the connects the legacies of the past with the possibilities of the future for audiences both within and beyond the classroom.
+            </div>
+          </ScrollableAnchor>
             <div className="writing-project small-12 medium-4 columns end">
               <img src="https://img.washingtonpost.com/wp-apps/imrs.php?src=https://img.washingtonpost.com/rf/image_960w/2010-2019/WashingtonPost/2017/08/19/National-Politics/Images/Boston_SG35.JPG&w=1484" className="writing-image"/>
               <a className="source-link" href="https://www.washingtonpost.com/news/made-by-history/wp/2017/08/25/why-do-police-riot-squads-target-protesters-instead-of-white-supremacists/?utm_term=.bd37aae7f4ec">Why do police riot squads target protesters instead of white supremacists?</a>
               <p><i>Washington Post</i> August 25, 2017</p>
             </div>
-          </ScrollableAnchor>
           <div className="writing-project small-12 medium-4 columns end">
             <img src="http://res.cloudinary.com/dpuzgzqir/image/upload/v1510792307/protected_and_policed_higher_res_txvzsp.jpg" className="writing-image"/>
             <a className="source-link" href="https://www.wcwonline.org/Women-s-Review-Of-Books-Sept/Oct-2015/protected-and-policed">"Protected and Policed"</a>
