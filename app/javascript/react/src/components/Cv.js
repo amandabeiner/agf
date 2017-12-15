@@ -3,7 +3,8 @@ import Header from './Header'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const Cv = (props) => {
-  const url = "http://res.cloudinary.com/dpuzgzqir/image/upload/v1510794459/Anne_Gray_Fischer_CV_website_k3auie.pdf"
+  const url = "http://res.cloudinary.com/dpuzgzqir/image/upload/v1513351741/Anne_Gray_Fischer_CV_website_1_pqlyhw.pdf"
+
   return (
     <div className="cv-container">
       <Header
