@@ -18,11 +18,6 @@ const links = [
     text: "Writing",
     href: "/writing",
     id: "#writing"
-  },
-  {
-    text: "Teaching",
-    href: "/teaching",
-    id: "#teaching"
   }
 ]
 
