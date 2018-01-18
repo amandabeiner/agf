@@ -1,4 +1,4 @@
-class ResearchesController < ApplicationController
+class Admin::ResearchController < ApplicationController
   def index
     @project = Research.all
   end

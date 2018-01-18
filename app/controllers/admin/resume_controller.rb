@@ -1,5 +1,5 @@
-class ResumesController < ApplicationController
-  def show
+class Admin::ResumeController < ApplicationController
+  def index
     @resume = Resume.first
   end
   def update

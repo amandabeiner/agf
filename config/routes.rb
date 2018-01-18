@@ -10,9 +10,10 @@ Rails.application.routes.draw do
     resources :research, only: [:index]
   end
 
-  resources :resumes, only: :update
-  resources :research, only: [:index, :create, :update]
-
+  namespace :admin do
+    resources :resume, only: [:index, :update]
+    resources :research, only: [:index, :create, :update]
+  end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
