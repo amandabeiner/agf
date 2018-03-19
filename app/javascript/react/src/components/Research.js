@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import ProjectContainer from './ProjectContainer'
+import ProjectsContainer from '../containers/ProjectsContainer'
 
 const Research = props => {
   return (
@@ -9,7 +9,7 @@ const Research = props => {
         headerName="Research"
         path={props.location.pathname}
       />
-      <ProjectContainer />
+      <ProjectsContainer />
     </div>
   )
 }

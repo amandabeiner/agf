@@ -1,19 +1,27 @@
-import React from 'react'
+import React, { Fragment } from 'react'
+import ReactHtmlParser from 'react-html-parser'
 
 const Projects = props => {
+  const projects = props.projects.map(project => {
+    return (
+      <div>
+        <div className="project small-12 medium-6 columns">
+          <img src={project.image_url} className="project-photo"/>
+        </div>
+        <div className="project small-12 medium-6 columns">
+          <p className="project-text">
+            {ReactHtmlParser(project.title)} <br />
+            {ReactHtmlParser(project.description)}
+          </p>
+        </div>
+      </div>
+    )
+  })
+  console.log(props)
   return (
     <div className="project-tile-container row">
       <h3 className="research-header other-research">Other Research</h3>
-      <div className="project small-12 medium-6 columns">
-        <img src="http://res.cloudinary.com/dpuzgzqir/image/upload/v1508803339/women_in_combat_zone_fasfj7.jpg" className="project-photo"/>
-      </div>
-      <div className="project small-12 medium-6 columns">
-        <p className="project-text">
-          <p>"You are Now Entering the Combat Zone": Policing Black Women to Solve Boston's Urban Crisis</p>
-          <p>In this essay, which is forthcoming in "Social Histories of Neoliberalism," a special issue of the <i>Journal of Social History</i>, I argue that the sexual policing of black women was central to urban fiscal revival strategies of Boston in the 1970s.
-          </p>
-        </p>
-      </div>
+      {projects}
     </div>
   )
 }

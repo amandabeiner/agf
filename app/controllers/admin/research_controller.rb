@@ -1,6 +1,6 @@
 class Admin::ResearchController < ApplicationController
   def index
-    @project = Research.all
+    @projects = Research.all
   end
 
   def create
@@ -9,8 +9,21 @@ class Admin::ResearchController < ApplicationController
   end
 
   def update
-    @project = Project.find(params[:id])
+    @project = Research.find(params[:id])
     @project.update(research_params)
+    redirect_to admin_research_path(@project)
+  end
+
+  def show
+    @project = Research.find(params[:id])
+  end
+
+  def edit
+    @project = Research.find(params[:id])
+  end
+
+  def new
+    @project = Research.new
   end
 
   private

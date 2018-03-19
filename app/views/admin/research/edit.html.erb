@@ -1,0 +1,18 @@
+<div style="margin: 2%">
+  <h1><%= @project.title.html_safe %></h1>
+  <%= form_for @project, url: {action: 'update'} do |f| %>
+    <%= label_tag(:title, "Title") %>
+    <%= f.trix_editor :title %>
+    <%= label_tag(:description, "Description") %>
+    <%= f.trix_editor :description %><br />
+    <% if !@project.headline %>
+      <%= label_tag(:image_url, "Image URL") %>
+      <%= f.text_field :image_url %><br />
+    <% end %>
+    <%= label_tag(:hidden, "Hide?") %>
+    <%= f.check_box(:hidden) %> <br />
+    <%= label_tag(:headline, "Make this the headline project?") %>
+    <%= f.check_box(:headline) %> <br />
+    <%= f.submit "Save Changes" %>
+  <% end %>
+</div>

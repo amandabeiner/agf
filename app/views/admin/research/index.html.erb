@@ -1,1 +1,4 @@
-<h1>RESEARCH</h1>
+<h1>Projects for edit</h1>
+<% @projects.each do |project| %>
+  <%= link_to project.title.html_safe, edit_admin_research_path(project)  %>
+<% end %>
