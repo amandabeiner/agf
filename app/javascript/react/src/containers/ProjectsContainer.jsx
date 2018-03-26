@@ -12,7 +12,6 @@ class ProjectsContainer extends Component {
   }
 
   render() {
-    console.log(this.props)
     return(
       <div className="project-container">
         <HeadlineProject

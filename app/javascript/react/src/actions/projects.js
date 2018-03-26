@@ -12,7 +12,6 @@ export const fetchProjects = () => {
       let projects = response.json()
       return projects
       }).then(projects => {
-        console.log(projects)
       return dispatch(fetchProjectsSuccess(projects))
     })
   }

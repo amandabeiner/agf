@@ -17,7 +17,7 @@ const Projects = props => {
       </div>
     )
   })
-  console.log(props)
+  
   return (
     <div className="project-tile-container row">
       <h3 className="research-header other-research">Other Research</h3>

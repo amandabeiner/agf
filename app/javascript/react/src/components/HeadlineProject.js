@@ -4,7 +4,6 @@ import ReactHtmlParser from 'react-html-parser'
 import ScrollableAnchor from 'react-scrollable-anchor'
 
 const HeadlineProject = props => {
-  console.log(props)
   return(
     <ScrollableAnchor id="headline-project">
       <div className="headline-project">
