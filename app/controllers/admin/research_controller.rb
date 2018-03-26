@@ -11,7 +11,7 @@ class Admin::ResearchController < ApplicationController
   def update
     @project = Research.find(params[:id])
     @project.update(research_params)
-    redirect_to admin_research_path(@project)
+    redirect_to research_path
   end
 
   def show

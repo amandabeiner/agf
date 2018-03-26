@@ -7,11 +7,19 @@
     background-position: 30% 30%;
     position: relative;
   }
+}
 
-  .resume {
-    display: block;
-    margin: auto;
-    min-width: 75%;
-    min-height: 100vh;
+.resume {
+  display: block;
+  margin: auto;
+  min-width: 75%;
+  min-height: 100vh;
+}
+
+.update-resume-form {
+  text-align: center;
+
+  .input {
+    width: 70%;
   }
 }

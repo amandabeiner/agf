@@ -1,0 +1,9 @@
+<div style="margin: 2%;">
+  <h1>Resume</h1>
+  <%= form_for @resume, url: { action: 'update' }, html: { class: 'update-resume-form'} do |f| %>
+    <%= f.text_field :url, label: "New resume URL:", html: { class: 'resume-field'} %>
+  <%= f.submit "Update resume" %>
+  <% end %>
+  <h3>Current resume:</h3>
+  <iframe class="resume" src=<%=@resume.url%>></iframe>
+</div>
