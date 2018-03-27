@@ -1,4 +1,8 @@
-<h1>Projects for edit</h1>
-<% @projects.each do |project| %>
-  <%= link_to project.title.html_safe, edit_admin_research_path(project)  %>
-<% end %>
+<div style="margin: 2%;">
+  <h1>Projects for edit</h1>
+  <ul>
+    <% @projects.each do |project| %>
+      <li><%= link_to project.title.html_safe, edit_admin_research_path(project)  %></li>
+  <% end %>
+  </ul>
+</div>
