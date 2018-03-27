@@ -10,14 +10,18 @@ const Projects = props => {
         </div>
         <div className="project small-12 medium-6 columns">
           <p className="project-text">
-            {ReactHtmlParser(project.title)} <br />
-            {ReactHtmlParser(project.description)}
+            <div style={{marginBottom: "7%"}}>
+              {ReactHtmlParser(project.title)}
+            </div>
+            <div>
+              {ReactHtmlParser(project.description)}
+            </div>
           </p>
         </div>
       </div>
     )
   })
-  
+
   return (
     <div className="project-tile-container row">
       <h3 className="research-header other-research">Other Research</h3>
