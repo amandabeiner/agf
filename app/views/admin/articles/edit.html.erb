@@ -1,0 +1,16 @@
+<div style="margin: 2%">
+  <h1>Edit Writing Sample</h1>
+  <%= form_for @article, url: {action: 'update'} do |f| %>
+    <%= label_tag(:headline, "Headline") %>
+    <%= f.trix_editor :headline %><br/>
+    <%= label_tag(:source, "Source/Publication") %>
+    <%= f.trix_editor :source %><br />
+    <%= label_tag(:url, "Link to article") %>
+    <%= f.text_field :url %><br />
+    <%= label_tag(:image_url, "Image URL") %>
+    <%= f.text_field :image_url %><br />
+    <%= label_tag(:hidden, "Hide from site?") %>
+    <%= f.check_box(:hidden) %><br />
+    <%= f.submit "Edit" %>
+  <% end %>
+</div>

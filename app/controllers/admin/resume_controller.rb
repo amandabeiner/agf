@@ -1,7 +1,8 @@
 class Admin::ResumeController < ApplicationController
-  def index
+  def edit
     @resume = Resume.first
   end
+
   def update
     @resume = Resume.first
     @resume.update(resume_params)

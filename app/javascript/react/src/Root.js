@@ -3,10 +3,10 @@ import { Provider } from 'react-redux';
 import { Router, Route, IndexRoute } from 'react-router';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
-import Cv from './components/Cv';
+import Cv from './containers/CvContainer';
 import Research from './components/Research';
 import Teaching from './components/Teaching';
-import Writing from './components/Writing';
+import Writing from './containers/WritingContainer';
 
 
 const Root = props => {
