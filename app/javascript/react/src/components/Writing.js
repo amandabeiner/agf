@@ -14,7 +14,7 @@ class Writing extends Component {
         <div className="articles-container row">
           <ScrollableAnchor id="writing">
             <div className="writing-intro">
-              My historical work is inspired by and responsive to the urgency of our contemporary political moment. I am committed to public writing the connects the legacies of the past with the possibilities of the future for audiences both within and beyond the classroom.
+              My historical work is inspired by and responsive to the urgency of our contemporary political moment. I am committed to public writing that connects the legacies of the past with the possibilities of the future for audiences both within and beyond the classroom.
             </div>
           </ScrollableAnchor>
             <div className="writing-project small-12 medium-4 columns end">
