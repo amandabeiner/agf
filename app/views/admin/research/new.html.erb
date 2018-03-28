@@ -6,7 +6,7 @@
   <%= f.trix_editor :description %>
   <%= label_tag(:image_url, "Image URL") %>
   <%= f.text_field :image_url %>a
-  <%= label_tag(:visible, "Visible?") %>
-  <%= check_box_tag(:visible) %>
+  <%= label_tag(:hidden, "Hide from site?") %>
+  <%= f.check_box(:hidden) %>
   <%= f.submit "Create" %>
 <% end %>

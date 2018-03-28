@@ -37,10 +37,6 @@ ActiveRecord::Schema.define(version: 20180326000402) do
     t.string "url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "pdf_file_name"
-    t.string "pdf_content_type"
-    t.integer "pdf_file_size"
-    t.datetime "pdf_updated_at"
   end
 
 end
