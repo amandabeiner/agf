@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import ScrollableAnchor from 'react-scrollable-anchor'
 
 import Header from '../components/Header'
 import Article from '../components/Article'
+import ResearchDescription from '../components/ResearchDescription'
 
+import { fetchResearchDescription } from '../actions/researchDescription'
 import { fetchArticles } from '../actions/articles'
 
 class WritingContainer extends Component {
@@ -36,11 +37,10 @@ class WritingContainer extends Component {
           path={this.props.location.pathname}
         />
         <div className="articles-container row">
-          <ScrollableAnchor id="writing">
-            <div className="writing-intro">
-              My historical work is inspired by and responsive to the urgency of our contemporary political moment. I am committed to public writing that connects the legacies of the past with the possibilities of the future for audiences both within and beyond the classroom.
-            </div>
-          </ScrollableAnchor>
+          <ResearchDescription
+            fetchResearchDescription={this.props.fetchResearchDescription}
+            researchDescription={this.props.researchDescription}
+          />
           {this.getArticles()}
         </div>
       </div>
@@ -49,11 +49,13 @@ class WritingContainer extends Component {
 }
 
 const mapStateToProps = state => ({
-  articles: state.articles.articles
+  articles: state.articles.articles,
+  researchDescription: state.researchDescription.researchDescription
 })
 
 const  mapDispatchToProps = dispatch => ({
-  fetchArticles: () => { dispatch(fetchArticles()) }
+  fetchArticles: () => { dispatch(fetchArticles()) },
+  fetchResearchDescription: () => { dispatch(fetchResearchDescription()) }
 })
 
 export default connect(mapStateToProps, mapDispatchToProps)(WritingContainer)

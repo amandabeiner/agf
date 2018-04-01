@@ -1,6 +1,7 @@
 class Admin::ResearchController < ApplicationController
   def index
     @projects = Research.all
+    @description = ResearchDescription.first
   end
 
   def create
