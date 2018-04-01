@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :resumes, only: [:show]
     resources :research, only: [:index]
     resources :articles, only: :index
+    resources :bios, only: :index
   end
 
   namespace :admin do

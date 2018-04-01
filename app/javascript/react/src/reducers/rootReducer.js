@@ -2,13 +2,15 @@ import { combineReducers } from 'redux';
 import { projects } from './projects';
 import { cv } from './cv';
 import { articles } from './articles'
+import { bio } from './bio'
 import { routerReducer as routing } from 'react-router-redux';
 
 const rootReducer = combineReducers({
   routing,
   projects,
   articles,
-  cv
+  cv,
+  bio
 });
 
 export default rootReducer;
