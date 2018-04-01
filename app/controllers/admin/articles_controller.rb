@@ -1,6 +1,7 @@
 class Admin:: ArticlesController <  ApplicationController
   def index
     @articles = Article.all
+    @description = ResearchDescription.first
   end
 
   def new

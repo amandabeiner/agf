@@ -1,11 +1,5 @@
 <div style="margin: 2%;">
   <h1>Projects for edit</h1>
-  <%= form_for @description, url: admin_research_description_path(@description) do |f| %>
-    <%= label_tag(:paragraph, "Description") %>
-    <%= f.trix_editor :paragraph %>
-    <%= f.submit "Save Changes" %>
-  <% end %>
-
   <ul>
     <% @projects.each do |project| %>
       <li><%= link_to project.title.html_safe, edit_admin_research_path(project)  %></li>
