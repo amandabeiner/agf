@@ -6,6 +6,7 @@ class Admin::ResearchController < ApplicationController
   def create
     @project = Research.new(research_params)
     @project.save
+    redirect_to research_path
   end
 
   def update
@@ -32,4 +33,3 @@ class Admin::ResearchController < ApplicationController
     params.require(:research).permit(:title, :description, :image_url, :headline, :hidden)
   end
 end
-

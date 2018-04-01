@@ -4,7 +4,7 @@ import ReactHtmlParser from 'react-html-parser'
 const Projects = props => {
   const projects = props.projects.map(project => {
     return (
-      <div>
+      <div className="small-12 row" style={{ marginBottom: "2%"}}>
         <div className="project small-12 medium-6 columns">
           <img src={project.image_url} className="project-photo"/>
         </div>

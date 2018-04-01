@@ -1,12 +1,14 @@
-<h1>New Project</h1>
-<%= form_for @project, url: {action: 'create'} do |f| %>
-  <%= label_tag(:title, "Title") %>
-  <%= f.trix_editor :title %>
-  <%= label_tag(:description, "Description") %>
-  <%= f.trix_editor :description %>
-  <%= label_tag(:image_url, "Image URL") %>
-  <%= f.text_field :image_url %>a
-  <%= label_tag(:visible, "Visible?") %>
-  <%= check_box_tag(:visible) %>
-  <%= f.submit "Create" %>
-<% end %>
+<div style="margin: 2%;">
+  <h1>New Project</h1>
+  <%= form_for @project, url: {action: 'create'} do |f| %>
+    <%= label_tag(:title, "Title") %>
+    <%= f.trix_editor :title %>
+    <%= label_tag(:description, "Description") %>
+    <%= f.trix_editor :description %>
+    <%= label_tag(:image_url, "Image URL") %>
+    <%= f.text_field :image_url %>a
+    <%= label_tag(:hidden, "Hide from site?") %>
+    <%= f.check_box(:hidden) %>
+    <%= f.submit "Create" %>
+  <% end %>
+</div>
