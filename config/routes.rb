@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :research, only: [:index]
     resources :articles, only: :index
     resources :bios, only: :index
+    resources :research_descriptions, only: :index
   end
 
   namespace :admin do
