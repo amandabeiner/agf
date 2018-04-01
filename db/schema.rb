@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180401142636) do
+ActiveRecord::Schema.define(version: 20180401162202) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -29,6 +29,10 @@ ActiveRecord::Schema.define(version: 20180401142636) do
     t.text "paragraph", null: false
   end
 
+  create_table "research_descriptions", force: :cascade do |t|
+    t.text "paragraph", null: false
+  end
+
   create_table "researches", force: :cascade do |t|
     t.string "title", null: false
     t.text "description", null: false
@@ -41,6 +45,10 @@ ActiveRecord::Schema.define(version: 20180401142636) do
     t.string "url", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "pdf_file_name"
+    t.string "pdf_content_type"
+    t.integer "pdf_file_size"
+    t.datetime "pdf_updated_at"
   end
 
 end
