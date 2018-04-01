@@ -1,0 +1,8 @@
+<div style="margin: 2%;">
+  <h1>Edit Bio</h1>
+  <%= form_for @bio, url: {action: 'update'} do |f| %>
+    <%= label_tag(:paragraph, "Content") %>
+    <%= f.trix_editor :paragraph %><br/>
+    <%= f.submit "Edit" %>
+  <% end %>
+</div>

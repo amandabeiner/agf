@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :resumes, only: [:show]
     resources :research, only: [:index]
     resources :articles, only: :index
+    resources :bios, only: :index
   end
 
   namespace :admin do
@@ -16,6 +17,7 @@ Rails.application.routes.draw do
     resources :resume, only: [:edit, :update]
     resources :research
     resources :articles
+    resources :bios, only: [:edit, :update]
   end
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
