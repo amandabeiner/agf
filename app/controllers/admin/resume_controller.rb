@@ -1,4 +1,6 @@
 class Admin::ResumeController < ApplicationController
+  before_action :authorize!
+
   def edit
     @resume = Resume.first
   end

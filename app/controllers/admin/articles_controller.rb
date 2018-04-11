@@ -1,4 +1,6 @@
 class Admin:: ArticlesController <  ApplicationController
+  before_action :authorize!
+
   def index
     @articles = Article.all
     @description = ResearchDescription.first
