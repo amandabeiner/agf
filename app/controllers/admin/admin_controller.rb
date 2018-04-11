@@ -2,6 +2,7 @@ class Admin::AdminController < ApplicationController
   def index
     @current_user = current_user
     @resume = Resume.first
+    @bio = Bio.first
   end
 
   def create

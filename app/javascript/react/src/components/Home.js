@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import Bio from './Bio'
+import BioContainer from '../containers/BioContainer'
 
 const Home = props => {
   return (
@@ -9,7 +9,7 @@ const Home = props => {
         headerName="Anne Gray Fischer"
         path={props.location.pathname}
       />
-      <Bio />
+      <BioContainer />
     </div>
   )
 }

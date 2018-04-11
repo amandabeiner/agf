@@ -1,10 +1,18 @@
 <div style="margin: 2%;">
 <h1>Articles for edit</h1>
 
-<%= link_to "Add new article", new_admin_article_path %>
+  <%= form_for @description, url: admin_research_description_path(@description) do |f| %>
+    <%= label_tag(:paragraph, "Description") %>
+    <%= f.trix_editor :paragraph %>
+    <%= f.submit "Save Changes" %>
+  <% end %>
+
 
 <ul>
 <% @articles.each do |article| %>
   <li><%= link_to article.headline.html_safe, edit_admin_article_path(article) %></li>
 <% end %>
 <ul>
+  
+  <%= link_to "Add new article", new_admin_article_path %>
+</div>
