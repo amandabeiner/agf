@@ -1,4 +1,6 @@
 class Admin::ResearchController < ApplicationController
+  before_action :authorize!
+
   def index
     @projects = Research.all
   end

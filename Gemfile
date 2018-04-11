@@ -8,6 +8,8 @@ gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'webpacker', git: 'https://github.com/rails/webpacker.git'
 gem 'trix'
+gem 'bcrypt'
+
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'

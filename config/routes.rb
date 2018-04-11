@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   get '/research', to: 'pages#index'
   get '/teaching', to: 'pages#index'
   get '/writing', to: 'pages#index'
-  
+
   namespace :api do
     resources :resumes, only: [:show]
     resources :research, only: [:index]
@@ -13,6 +13,7 @@ Rails.application.routes.draw do
 
   namespace :admin do
     root to: 'admin#index'
+    resources :admin, only: [:create, :destroy]
     resources :resume, only: [:edit, :update]
     resources :research
     resources :articles

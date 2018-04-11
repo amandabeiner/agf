@@ -1,8 +1,19 @@
-<div style="margin: 2%;">
-  <h1>Pages available for update</h1>
-  <ul>
-    <li><%= link_to "Resesarch", admin_research_index_path %></li>
-    <li><%= link_to "CV", edit_admin_resume_path(@resume) %></li>
-    <li><%= link_to "Writing", admin_articles_path %></li>
-  </ul>
-</div>
+<% if @current_user %>
+    <%= link_to "Log out", admin_admin_path(@current_user), method: :delete %>
+  <div style="margin: 2%;">
+    <h1>Pages available for update</h1>
+    <ul>
+      <li><%= link_to "Resesarch", admin_research_index_path %></li>
+      <li><%= link_to "CV", edit_admin_resume_path(@resume) %></li>
+      <li><%= link_to "Writing", admin_articles_path %></li>
+    </ul>
+  </div>
+<% else %>
+  <h1>Login</h1>
+  <h3><%= flash[:error] %></h3>
+  <%= form_tag '/admin/admin' do %>
+    Email: <%= text_field_tag :email %>
+    Password: <%= password_field_tag :password %>
+    <%= submit_tag "Submit" %>
+  <% end %>
+<% end %>
