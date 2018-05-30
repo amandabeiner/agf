@@ -12,6 +12,6 @@ class Admin::BiosController < ApplicationController
   private
 
   def bio_params
-    params.require(:bio).permit(:paragraph)
+    params.require(:bio).permit(:paragraph, :email)
   end
 end

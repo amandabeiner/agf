@@ -21,8 +21,12 @@ class BioContainer extends Component {
             <div className="anne-bio small-12 medium-6 columns">
               {ReactHtmlParser(this.props.bio.paragraph)}
               <div style={{marginTop: "4%"}}>
-                <img src="https://res.cloudinary.com/dpuzgzqir/image/upload/v1513354554/email-2048-black_xoqvpo.png" style={{maxWidth: "25px", marginRight: "5px"}} />
-                anne_gray_fischer[at]brown[dot]edu
+                {this.props.bio.email && (
+                  <div>
+                  <img src="https://res.cloudinary.com/dpuzgzqir/image/upload/v1513354554/email-2048-black_xoqvpo.png" style={{maxWidth: "25px", marginRight: "5px"}} />
+                  <span>{this.props.bio.email}</span>
+                </div>
+                )}
               </div>
             </div>
           </div>

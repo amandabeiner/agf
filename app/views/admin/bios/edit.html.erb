@@ -3,6 +3,8 @@
   <%= form_for @bio, url: {action: 'update'} do |f| %>
     <%= label_tag(:paragraph, "Content") %>
     <%= f.trix_editor :paragraph %><br/>
+    <%= label_tag(:email, "Email address") %>
+    <%= f.text_field :email %>
     <%= f.submit "Edit" %>
   <% end %>
 </div>
